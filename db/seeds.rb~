@@ -1,0 +1,19 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+b1 = Brother.create(first_name: 'Benjamin', last_name: 'Pannell', image: '', initials: 'BDP', phone_number: '317-750-8851', email: 'bendpannell@gmail.com', pledge_class: '2010')
+
+scp1 = Scoop.create(hometown: 'Plainfield, IN', major: 'Regret', pledge_father: 'MJK', pledge_son: '', likes: 'climbing', dislikes: 'tomatoes')
+
+b2 = Brother.create(first_name: 'Marshall', last_name: 'Ishmael', image: '', initials: 'MKI', phone_number: '', email: '', pledge_class: '2010')
+
+scp2 = Scoop.create(hometown: 'Knoxville, TN', major: 'BE', pledge_father: 'BRF', pledge_son: 'CBH', likes: 'lewd humor', dislikes: 'spiders')
+
+b3 = Brother.create(first_name: 'Kevin', last_name: 'Farley', image: '', initials: 'KAF', phone-number: '', email: '', pledge_class: '2010')
+
+scp3 = Scoop.create(hometown: 'Centennial, CO', major: 'BE', pledge_father: 'GPS', pledge_son: 'MXT, DRS', likes: 'orthopaedics', dislikes: 'decisions')

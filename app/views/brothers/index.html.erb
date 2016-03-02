@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="container-fluid">
+	<% @brothers.each do |brother| %>
+		<div class="brother"  style="display: block; text-align: center">
+			<%= image_tag brother.image %>
+			<h3><%= brother.first_name + " " + brother.last_name %></h3>
+			<h6>"<%= brother.initials %>"</h6>
+			<h6><%= brother.pledge_class %></h6>
+			<%= link_to "More Info", show_path(brother) %>
+	<% end %>
+</div>
+
+</body>
+</html>
